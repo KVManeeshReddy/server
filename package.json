@@ -9,7 +9,7 @@
     "hot" : "$(go env GOPATH)/bin/air",
     "get" : "go get",
     "test": "concurrently --kill-others-on-fail \"yarn hot\" \"go test ./...\"",
-    "build": "go build -o bin/server"
+    "build": "go build"
   },
   "author": "",
   "license": "ISC"
