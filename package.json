@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This workspace contains server application.",
+  "main": "index.js",
+  "scripts": {
+    "go" : "go",
+    "start": "go run .",
+    "hot" : "$(go env GOPATH)/bin/air",
+    "get" : "go get",
+    "test": "concurrently --kill-others-on-fail \"yarn hot\" \"go test ./...\"",
+    "build": "go build -o bin/server"
+  },
+  "author": "",
+  "license": "ISC"
+}
